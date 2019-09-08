@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Init Library</string>
+    <string name="share_watermark">https://behineh-pardaz.com</string>
+    <string name="gps_setting">موقعیت یاب</string>
+    <string name="gps_is_not_enable">موقعیت یاب شما فعال نیست. تمایل به فعال سازیی آن دارید؟</string>
+    <string name="device_setting">تنظیمات</string>
+    <string name="cancel">لغو</string>
+    <string name="yes">بله</string>
+
+    <string name="web_request_fail">خطا در اتصال به اینترنت</string>
+    <string name="drawer_home">صفحه اصلی</string>
+    <string name="drawer_open">منو باز شد</string>
+    <string name="drawer_close">منو بسته شد</string>
+    <string name="drawer_menu_notification">اعلان ها</string>
+    <string name="action_settings">تنظیمات</string>
+
+    <string name="version">نسخه : %s</string>
+
+    <string name="exit">خروج</string>
+
+    <string name="ok">قبول</string>
+    <string name="submit">تایید</string>
+    <string name="filter">فیلتر</string>
+    <string name="search">جستجو</string>
+
+</resources>

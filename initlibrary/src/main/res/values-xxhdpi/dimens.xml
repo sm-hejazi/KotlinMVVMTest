@@ -1,0 +1,5 @@
+<resources>
+	<dimen name="text_size_large">22.4sp</dimen>
+	<dimen name="text_size_normal">19.6sp</dimen>
+	<dimen name="text_size_small">15sp</dimen>
+</resources>
