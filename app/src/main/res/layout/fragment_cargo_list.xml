@@ -23,7 +23,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:onState="@{viewModel.productState}"
             app:products="@{viewModel.responseProductModels}"
             bind:onScrolledToBottom="@{(page) -> viewModel.onLoadMore(page)}"
             bind:resetLoadingState="@{false}"

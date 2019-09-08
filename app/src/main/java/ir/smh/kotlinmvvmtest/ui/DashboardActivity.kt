@@ -15,10 +15,10 @@ import javax.inject.Inject
 class DashboardActivity : BaseActivity<DashboardVM>(), HasSupportFragmentInjector {
 
     @Inject
-    internal var fragmentDispatchingAndroidInjector: DispatchingAndroidInjector<Fragment>? = null
+    lateinit var fragmentDispatchingAndroidInjector: DispatchingAndroidInjector<Fragment>
 
     @Inject
-    internal var dashboardViewModel: DashboardVM? = null
+    lateinit var dashboardViewModel: DashboardVM
     private var activityDashboardBinding: ActivityDashboardBinding? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {

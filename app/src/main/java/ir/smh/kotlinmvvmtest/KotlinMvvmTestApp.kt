@@ -17,7 +17,7 @@ class KotlinMvvmTestApp : Application(), HasActivityInjector {
 
 
     @Inject
-    internal var activityDispatchingAndroidInjector: DispatchingAndroidInjector<Activity>? = null
+    lateinit var activityDispatchingAndroidInjector: DispatchingAndroidInjector<Activity>
 
     override fun onCreate() {
         super.onCreate()

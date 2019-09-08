@@ -73,7 +73,7 @@
                     android:drawablePadding="@dimen/bottom_navigation_elevation"
                     android:maxLines="1"
                     android:paddingStart="@dimen/bottom_navigation_elevation"
-                    android:text="@{@string/from(itemVM.cargo.from)}"
+                    android:text="@{@string/from(itemVM.cargo.title)}"
                     android:textAlignment="textStart"
                     android:textColor="@color/textColorSecondary"
                     tools:text="@string/from" />

@@ -12,4 +12,7 @@ class CargoItemVM(cargoModel: CargoModel) : BaseObservable() {
         cargo = cargoModel
     }
 
+    fun getCargo(): CargoModel? {
+        return cargo
+    }
 }

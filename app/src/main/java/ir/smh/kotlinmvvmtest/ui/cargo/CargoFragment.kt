@@ -24,7 +24,7 @@ class CargoFragment : BaseFragment<CargoVM>() {
     private var cargoAdapter: CargoAdapter? = null
 
     @Inject
-    internal var mViewModel: CargoVM? = null
+    lateinit var mViewModel: CargoVM
 
     override fun onCreateView(
         inflater: LayoutInflater,
