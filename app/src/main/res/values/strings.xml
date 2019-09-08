@@ -1,3 +1,143 @@
 <resources>
-    <string name="app_name">KotlinMVVMTest</string>
+    <string name="app_name">باربری</string>
+
+
+    <string name="mobile_hint">09XXXXXXXXX</string>
+
+    <string name="permission_denied">شما مجوز های لازم را صادر نکردید</string>
+
+    <string name="welcome_text">به کانون بار خوش آمدید</string>
+    <string name="enter_phone">لطفا شماره موبایل خود را وارد نمایید:</string>
+    <string name="verification_code_sentf">کد تایید به شماره %s ارسال شد</string>
+    <string name="enter_code_below">لطفا کد را در کادر زیر وارد نمایید:</string>
+    <string name="resend_code">در صورتیکه بعد از گذشت 2 دقیقه کد برای شما ارسال نشد، دکمه "ارسال مجدد کد" را انتخاب کنید</string>
+    <string name="code_hint">-----</string>
+    <string name="timer_sample">00:45</string>
+    <string name="resend_code_button">ارسال مجدد کد</string>
+    <string name="todo">TODO</string>
+
+
+    <string name="str_rial">ریال</string>
+
+    <string name="rial">%s ریال</string>
+    <string name="payback_rate_max_months">حداکثر %s ماهه</string>
+
+
+    <string name="nav_market">بازار</string>
+    <string name="nav_myshop">سفارشات من</string>
+    <string name="nav_account">حساب</string>
+    <string name="nav_profile">پروفایل</string>
+
+    <string name="title_all">بارهای اعلام شده</string>
+    <string name="title_my">بارهای اعلامی من</string>
+
+    <!--Login-->
+    <string name="login_title"> ورود به سامانه</string>
+    <string name="login_username">نام کاربری</string>
+    <string name="login_pass">کلمه عبور</string>
+    <string name="login_enter">ورود</string>
+
+    <string name="delete">حذف</string>
+    <string name="edit">ویرایش</string>
+    <string name="exist">موجود</string>
+    <string name="not_exist">ناموجود</string>
+
+    <string name="message_delete">آیا از حذف محصول %s اطمینان دارید؟</string>
+
+    <!--Add Product-->
+    <string name="title_activity_add_product">افزودن محصول</string>
+    <string name="title_activity_edit_product">ویرایش محصول</string>
+    <string name="product_img">تصاویر محصول</string>
+    <string name="title">عنوان</string>
+    <string name="date_time">زمان بارگیری</string>
+
+    <string name="category">دسته بندی</string>
+    <string name="price">قیمت</string>
+    <string name="price_suj">قیمت پیشنهادی</string>
+
+    <string name="price_from">از</string>
+    <string name="price_to">تا</string>
+
+    <string name="payback_period">دوره باز پرداخت</string>
+    <string name="decent_rate">نرخ تنزیل</string>
+    <string name="description">توضیحات</string>
+    <string name="discount">درصد</string>
+    <string name="month">ماه</string>
+    <string name="persent_year">٪ سالانه</string>
+    <string name="year_percent">%s درصد سالانه</string>
+
+    <string name="status">وضعیت</string>
+    <string name="active">فعال</string>
+    <string name="inactive">غیرفعال</string>
+    <string name="wait_get">منتظر دریافت...</string>
+    <string name="specification">مشخصات</string>
+    <string name="clean_all">پاک کردن</string>
+    <string name="per_category">براساس دسته بندی</string>
+    <string name="per_price">براساس قیمت</string>
+
+
+    <string-array name="payback_period_array">
+        <item>حداکثر دوره باز پرداخت</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string name="date">تاریخ</string>
+
+    <string name="from">از : %s</string>
+    <string name="to">به : %s</string>
+    <string name="source">مبدأ</string>
+    <string name="destination">مقصد</string>
+    <string name="from_sou">مبدأ : %s</string>
+    <string name="to_des">مقصد : %s</string>
+    <string name="re_send">ارسال مجدد</string>
+    <string name="address">آدرس</string>
+
+    <string name="truck_type">نوع خودرو : %s</string>
+    <string name="packing_type">نوع بار    : %s</string>
+    <string name="weight">وزن : %s تن</string>
+    <string name="full_name">نام نام خانوادگی</string>
+    <string name="email">پست الکترونیک</string>
+    <string name="national_code">شناسه ملی</string>
+    <string name="complet_info">تکمیل اطلاعات</string>
+    <string name="name">نام</string>
+    <string name="family">نام خانوادگی</string>
+
+    <string name="profile_edit">ویرایش اطلاعات</string>
+
+    <string name="insert_date">زمان ثبت</string>
+    <string name="send_date">زمان بارگیری</string>
+
+    <string name="proximate_weight">وزن تقریبی (تخمین)</string>
+    <string name="kg">کیلوگرم</string>
+
+    <!--Error-->
+    <string name="no_data">اطلاعاتی یافت نشد</string>
+    <string name="err_service">خطای سرویس دهنده!</string>
+    <string name="err_date">لطفا تاریخ بارگیری را انتخاب نمایید!</string>
+    <string name="err_title">لطفا عنوان صحیح را وارد نمایید!</string>
+    <string name="err_from_state">لطفا استان مبدا را انتخاب نمایید!</string>
+    <string name="err_to_state">لطفا استان مقصد را انتخاب نمایید!</string>
+    <string name="err_from_city">لطفا شهر مبدا را انتخاب نمایید!</string>
+    <string name="err_to_city">لطفا شهر مبدا را انتخاب نمایید!</string>
+    <string name="err_car_type">لطفا نوع خودرو را انتخاب نمایید!</string>
+    <string name="err_packing_type">لطفا نوع بار را انتخاب نمایید!</string>
+    <string name="err_pro_weight">لطفا وزن تقریبی بار را وارد نمایید!</string>
+    <string name="err_price">لطفا قیمت پیشنهادی را وارد نمایید!</string>
+    <string name="retry">تلاش مجدد</string>
+
+    <string name="add_success">بار جدید با موفقیت ثبت شد.</string>
+
+
+
 </resources>

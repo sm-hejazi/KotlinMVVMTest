@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="CargoItemBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="itemVM"
+            type="ir.smh.kotlinmvvmtest.ui.cargo.list.CargoItemVM" />
+
+        <import type="ir.smh.kotlinmvvmtest.util.Utility" />
+    </data>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bottom_navigation_elevation"
+        android:layout_marginEnd="@dimen/bottom_navigation_elevation"
+        android:layout_marginStart="@dimen/bottom_navigation_elevation"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:orientation="horizontal"
+        app:cardCornerRadius="3dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!--<TextView
+                android:id="@+id/storeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/bottom_navigation_elevation"
+                android:text="@{itemVM.product.goodsName}"
+                android:textAlignment="center"
+                android:textColor="@color/textColorSecondary"
+                android:visibility="@{itemVM.isMyShop ? View.GONE : View.VISIBLE}"
+                tools:text="نام فروشگاه" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/TextViewStyle.Title"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/bottom_navigation_elevation"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/bottom_navigation_elevation"
+                    android:singleLine="true"
+                    android:text="@{itemVM.cargo.title}"
+                    tools:text="@string/title" />
+
+                <TextView
+                    android:id="@+id/from_city"
+                    style="@style/TextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/bottom_navigation_elevation"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/bottom_navigation_elevation"
+                    android:text="@{@string/from(itemVM.cargo.from)}"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/textColorSecondary"
+                    tools:text="@string/from" />
+
+                <TextView
+                    android:id="@+id/to_city"
+                    style="@style/TextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bottom_navigation_elevation"
+                    android:drawablePadding="@dimen/bottom_navigation_elevation"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/bottom_navigation_elevation"
+                    android:text="@{@string/to(itemVM.cargo.to)}"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/textColorSecondary"
+                    tools:text="@string/to" />
+
+                <TextView
+                    android:id="@+id/cargo_weight"
+                    style="@style/TextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bottom_navigation_elevation"
+                    android:drawablePadding="@dimen/bottom_navigation_elevation"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/bottom_navigation_elevation"
+                    android:text="@{@string/to(itemVM.cargo.weight)}"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/textColorSecondary"
+                    tools:text="@string/weight" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/bottom_navigation_elevation"
+                    android:background="@color/colorDivider" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingEnd="16dp">
+
+                <!--<FrameLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="@dimen/bottom_navigation_elevation"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        app:imgLoad="@{itemVM.product.productImageList.size() > 0 ? itemVM.product.productImageList.get(0) : null}"
+                        card_view:srcCompat="@drawable/placeholder" />
+                </FrameLayout>-->
+
+                <TextView
+                    android:id="@+id/price"
+                    style="@style/TextViewStyle.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_navigation_elevation"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/bottom_navigation_elevation"
+                    android:singleLine="true"
+                    android:text="@{itemVM.cargo.title}"
+                    android:textAlignment="textEnd"
+                    tools:text="1000" />
+
+                <TextView
+                    android:id="@+id/unitPrice"
+                    style="@style/TextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/bottom_navigation_elevation"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/bottom_navigation_elevation"
+                    android:text="@{@string/from(itemVM.cargo.from)}"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/textColorSecondary"
+                    tools:text="ریال" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
